@@ -1,0 +1,280 @@
+@font-face {
+    font-family: 'Della Respira';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./fonts/della-respira-v24-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./fonts/libre-baskerville-v17-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('./fonts/LibreBaskerville-Bold.ttf') format('truetype');
+}
+
+
+/* GLOBAL RESET & BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Baskerville', serif;
+    color: #333;
+    background-color: #fcf8f3;
+    line-height: 1.6;
+}
+
+#main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px 40px;
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dcdcdc;
+}
+
+/* HEADER & HERO SECTION */
+#title {
+    font-family: 'Della Respira', serif;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: clamp(2.5rem, 5vw, 3.0rem);
+    color: #383838;
+    font-weight: 400;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #666;
+}
+
+#img-div {
+    background: #e9e9e9;
+    padding: 15px 10px;
+    margin: 0 0 30px 0;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#img-caption {
+    padding: 10px 0 5px 0;
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #333;
+}
+
+/* TRIBUTE INFO (TIMELINE) */
+#tribute-info {
+    padding: 10px 0;
+    margin: 30px 0;
+}
+
+#tribute-info h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #383838;
+    font-size: 1.6rem;
+    border-bottom: 2px solid #383838;
+    padding-bottom: 5px;
+}
+
+.cite {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    margin: 40px auto;
+    padding: 15px 30px;
+    color: #333;
+    font-size: 1.25rem;
+    max-width: 70%;
+    background-color: #f7f7f7;
+    border-left: 3px solid #666;
+    border-radius: 0 4px 4px 0;
+}
+
+.timeline {
+    position: relative;
+    max-width: 860px;
+    margin: 60px auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #444;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 15px;
+    background-color: #fff;
+    border: 3px solid #333;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left::after {
+    right: -11px;
+}
+
+.right::after {
+    left: -11px;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.content strong {
+    color: #000080;
+    font-weight: 700;
+}
+
+.content {
+    padding: 15px 25px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    position: relative;
+    border-radius: 4px;
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover .content,
+.container:focus .content {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    color: #383838;
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+/* FOOTER & LINKS */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    border-top: 1px solid #ccc;
+    margin-top: 30px;
+}
+
+.footer p {
+    margin-top: 20px;
+}
+
+#tribute-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#tribute-link:hover {
+    color: #000;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+/* RESPONSIVE DESIGN (Mobile First) */
+@media screen and (max-width: 600px) {
+    #main {
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    #title {
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .container::before {
+        left: 60px;
+        border: medium solid #fff;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #fff transparent transparent;
+    }
+
+    .left::after,
+    .right::after {
+        left: 20px;
+        right: auto;
+    }
+
+    .right {
+        left: 0%;
+    }
+}
+
+/* Boa Prática de Acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}
