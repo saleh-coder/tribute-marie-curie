@@ -1,11 +1,11 @@
-# 🧪 Marie Curie – Tribute Page
+# Marie Curie – Tribute Page
 
 A static, fully **responsive** tribute page built with **semantic HTML5** and **modern CSS3**, highlighting the major milestones in **Marie Curie’s life** and scientific achievements.
 Designed for accessibility, clarity, and visual balance.
 
 ---
 
-## 🚀 Live Demo
+## Live Demo
 
 🔗 [View Project](https://saleh-coder.github.io/tribute-marie-curie)
 
@@ -14,7 +14,7 @@ Designed for accessibility, clarity, and visual balance.
 
 ---
 
-## 🛠️ Built With
+## Built With
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat\&logo=html5\&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat\&logo=css3\&logoColor=white)
@@ -25,7 +25,7 @@ Designed for accessibility, clarity, and visual balance.
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 * **Semantic HTML5** with accessible markup and proper heading hierarchy.
 * **Responsive CSS3** design using Flexbox and media queries.
@@ -35,7 +35,7 @@ Designed for accessibility, clarity, and visual balance.
 
 ---
 
-## 💻 How to Run Locally
+## How to Run Locally
 
 ```bash
 git clone https://github.com/saleh-coder/tribute-marie-curie.git
@@ -45,7 +45,7 @@ open index.html
 
 ---
 
-## 🧠 Learning Notes
+## Learning Notes
 
 This project helped me:
 
@@ -57,13 +57,6 @@ This project helped me:
 
 ---
 
-## 📜 License
+## License
 
 This project is open source under the [MIT License](LICENSE).
-
----
-
-## 👩‍💻 Credits
-
-Developed by **Amal Saleh**
-Inspired by the brilliance and legacy of **Marie Curie**.
