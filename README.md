@@ -10,7 +10,7 @@ Designed for accessibility, clarity, and visual balance.
 🔗 [View Project](https://saleh-coder.github.io/tribute-marie-curie)
 
 **Preview:**
-![Project Screenshot](./images/motion-ezgif.com-video-to-gif-converter.gif)
+[![Project Screenshot](./images/motion-ezgif.com-video-to-gif-converter.gif)](https://saleh-coder.github.io/tribute-marie-curie)
 
 ---
 
